@@ -75,3 +75,23 @@ print("\n3. Longitud (norma) del vector u:", norma_u)
 # 5. Potencia (cada elemento elevado al cuadrado)
 print("\n5. Potencia (a ** 2):")
 print(a ** 2)
+# filtrado de datos con mascaras booleanas
+import numpy as np
+
+# Arreglo de notas de un grupo
+notas = np.array([1.5, 3.0, 4.2, 2.8, 5.0, 3.8, 0.5, 4.8])
+
+print("Todas las notas:", notas)
+
+# 1. Filtrar estudiantes que APROBARON (nota >= 3.0)
+aprobados = notas[notas >= 3.0]
+print("\n1. Notas aprobadas (>= 3.0):", aprobados)
+
+# 2. Filtrar notas de EXCELENCIA (entre 4.0 Y 5.0)
+# NOTA: En NumPy para decir "Y" usamos el símbolo & y cada condición va entre paréntesis ()
+excelentes = notas[(notas >= 4.0) & (notas <= 5.0)]
+print("2. Notas excelentes (entre 4.0 y 5.0):", excelentes)
+
+# 3. Contar cuántos aprobaron directamente
+total_aprobados = np.sum(notas >= 3.0)
+print(f"\nTotal de estudiantes aprobados: {total_aprobados} de {len(notas)}")
