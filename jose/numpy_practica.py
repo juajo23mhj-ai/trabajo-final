@@ -49,6 +49,28 @@ print(a * b)
 # 4. División
 print("\n4. División (a / b):")
 print(a / b)
+# operaciones vectoriales
+import numpy as np
+
+# Imagina que u y v son dos vectores (por ejemplo, fuerzas o desplazamientos)
+u = np.array([3, 4])
+v = np.array([1, 2])
+
+print("--- Vectores originales ---")
+print("u =", u)
+print("v =", v)
+
+# 1. Combinación lineal (multiplicar por escalares y sumar: 2*u + 3*v)
+resultado_lineal = 2 * u + 3 * v
+print("\n1. Combinación lineal (2u + 3v):", resultado_lineal)
+
+# 2. Producto punto (Dot Product) - muy usado en física para trabajo y ángulos
+producto_punto = np.dot(u, v)  # También puedes usar u @ v
+print("\n2. Producto punto (u • v):", producto_punto)
+
+# 3. Magnitud o Norma de un vector (longitud geométrica)
+norma_u = np.linalg.norm(u)
+print("\n3. Longitud (norma) del vector u:", norma_u)
 
 # 5. Potencia (cada elemento elevado al cuadrado)
 print("\n5. Potencia (a ** 2):")
