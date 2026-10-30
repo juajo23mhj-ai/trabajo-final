@@ -1,1 +1,3 @@
-helloo
+Clase viernes 30 de octubre:
+
+En la clase de hoy trabajamos con NumPy, una herramienta de phyton para manejar números. Primero practicamos en Google Colab con una tabla de números de 3x3 y aprendimos a "recortarla" para quedarnos solo con ciertas partes, indicando que filas y que columnas queremos. Después vimos cómo calcular datos estadísticos de un grupo de números, como el promedio, el valor más alto, el más bajo, y aprendimos que podemos decidir si el cálculo se hace sobre toda la tabla, por columnas o por filas. 
